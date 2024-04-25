@@ -16,6 +16,12 @@ if [ ! -f ./wp-config.php ]; then
 	sed -i "s/database_name_here/$DB_NAME/g" wp-config-sample.php
 	cp wp-config-sample.php wp-config.php
 
+#	wp user create --allow-root $WP_ADMIN $WP_ADMIN_EMAIL \
+#	--role=administrator user_pass=$WP_ADMIN_PASS
+
+#	wp user create --allow-root $WP_USER $WP_USER_EMAIL \
+#	--role=author user_pass=$WP_PASSWORD
+
 fi
 
 /usr/sbin/php-fpm7.4 -F
