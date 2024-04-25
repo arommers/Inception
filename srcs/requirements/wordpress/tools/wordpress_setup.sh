@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /var/www/html/
+
 if [ ! -f ./wp-config.php ]; then 
 
 	wget http://wordpress.org/latest.tar.gz
@@ -16,4 +18,4 @@ if [ ! -f ./wp-config.php ]; then
 
 fi
 
-exec "$@"
+/usr/sbin/php-fpm7.4 -F
