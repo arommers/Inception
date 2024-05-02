@@ -9,11 +9,9 @@ RUN	apt-get update && apt-get -y install \
 	php7.4-pdo \
 	php7.4-gd \
 	php7.4-mbstring \
-	redis \
-	php-redis \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN	curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
+RUN	wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
 	&& chmod +x wp-cli.phar \
 	&& mv wp-cli.phar /usr/local/bin/wp
 
