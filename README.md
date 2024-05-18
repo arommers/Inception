@@ -23,7 +23,7 @@ Docker Compose is used to define and manage the entire application stack, allowi
 To create our containerized WordPress environment, we need to configure and launch the three main services mentioned above. 
 Each service has its own Dockerfile and configuration files. Ensuring each service is configured correctly is vital for the overall stability, security, and performance of the WordPress site.
 Each component relies on the others, and any misconfiguration can cause issues that affect the entire system.
-Simply put, if we don't configure mand attune all service correctly our dockerized environment won't run properly or not at all.
+Simply put, if we don't configure and attune all service correctly our dockerized environment won't run properly or not at all.
 
 #### Nginx
 Nginx is a high-performance web server and reverse proxy server.
